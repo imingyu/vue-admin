@@ -1,0 +1,41 @@
+//尺寸
+$wd-left-menu:220px;
+$ht-header:50px;
+//颜色
+$clr-bg-left-menu:#324157;
+$clr-bg-top-menu:#324157;
+//zindex值
+$zi-map:(important:5000, secondary:1000, normal:500, least:0);
+$zi-name-leval:();
+$zi-name-val:();
+
+/**
+ * 计算/约束zindex值（对sass了解不多，此函数为测试使用，暂不真实使用）
+ * @param {String} $leval 可选值：important，secondary，normal，least
+ * @param {String} $name 给自己取个名字
+ * @param {String} $compareName 与哪个name的zindex实体进行对比
+ * @param {Number} $compare 可选值：-1（小于这个name的zindex），0（等于），1（大于）；
+ */
+
+@function zIndex($leval, $name:'', $compareName:'', $compareMode:1) {
+    $result: 0;
+    $curLevalVal: map-get($zi-map, $leval);
+    $cnameLeval: map-get($zi-name-leval, $compareName);
+    $cnameValue: map-get($zi-name-val, $compareName);
+    @if($leval && $curLevalVal) {
+        $result: $curLevalVal+1;
+        $zi-map: map-merge($zi-map, (#{$leval}: $result));
+    }
+    @if($compareName) {
+        @if($cnameValue) {
+            $result: $cnameValue+$compareMode;
+        }
+        @if($cnameLeval && $compareMode>0) {
+            $zi-map: map-merge($zi-map, (#{$cnameLeval}: $result));
+        }
+    }
+    @if($name) {
+        $zi-name-val: map-merge($zi-name-val, (#{$name}: $result));
+    }
+    @return $result;
+}

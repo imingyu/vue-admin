@@ -44,3 +44,7 @@ export var login = loginModel => {
         return data;
     })
 }
+
+export var logout = () => {
+    localStorage.removeItem('$LoginUser');
+}

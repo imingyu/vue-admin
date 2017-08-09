@@ -1,18 +1,21 @@
 <template>
-    <div class="page page-login">
+    <Page name='login'>
         <div class="scrub-box"></div>
         <div class="login-container">
             <h1>欢迎你</h1>
             <h6>请输入您的账号和密码进行登录</h6>
             <LoginBox></LoginBox>
         </div>
-    </div>
+    </Page>
 </template>
 
 <style lang="scss">
 .page-login {
-    position: relative;
-    overflow: hidden;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;

@@ -20,6 +20,7 @@ module.exports = {
     'rules': {
         "indent": ["error", 4],
         "eol-last": 0,
+        "spaced-comment": 0,
         "eqeqeq": 0,
         "one-var": 0,
         "no-unneeded-ternary": 0,
