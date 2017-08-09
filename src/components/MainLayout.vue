@@ -15,7 +15,7 @@
 </template>
 
 <style lang="scss">
-@import '../assets/mixin.scss';
+@import '../assets/style/mixin.scss';
 .main-layout {
     .header-placeholder{
         height: $ht-header;

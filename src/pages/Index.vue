@@ -1,7 +1,7 @@
 <template>
     <Page name='index'>
         <h1>首页</h1>
-        <button @click="show">show</button>
+        <el-button type="primary" @click="show">show</el-button>
         <template v-if="isShow">
         <h1>首页</h1>
         <h1>首页</h1>

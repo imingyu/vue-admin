@@ -23,7 +23,7 @@
 </template>
 
 <style lang="scss">
-@import '../assets/mixin.scss';
+@import '../assets/style/mixin.scss';
 .header-main {
     height: $ht-header;
     background: $clr-bg-top-menu;
