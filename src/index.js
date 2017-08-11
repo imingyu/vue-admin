@@ -1,5 +1,4 @@
-import 'normalize.css/normalize.css'
-import './assets/style/element-ui/index.css'
+import './assets/style/base.scss'
 
 import Vue from 'vue'
 import ElementUI from 'element-ui'

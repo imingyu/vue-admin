@@ -21,15 +21,6 @@
     </div>
 </template>
 
-<style lang="scss">
-.left-menu{
-    .el-menu{
-        border-radius: 0;
-    }
-}
-</style>
-
-
 <script>
 export default {
     name: 'LeftMenu'

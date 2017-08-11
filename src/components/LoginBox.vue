@@ -24,33 +24,33 @@
 .login-box {
     display: block;
     width: 100%;
+}
 
+.btn-login {
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 18px;
+}
 
-    .btn-login {
-        padding: 15px;
-        border-radius: 25px;
-        font-size: 18px;
+.el-input__inner {
+    height: 50px;
+    border-radius: 25px;
+    background: none;
+    color: inherit;
+    font-size: 18px;
+    text-align: inherit;
+
+    &::-moz-placeholder {
+        color: #fff;
+        opacity: .2;
     }
-    .el-input__inner {
-        height: 50px;
-        border-radius: 25px;
-        background: none;
-        color: inherit;
-        font-size: 18px;
-        text-align: inherit;
-
-        &::-moz-placeholder {
-            color: #fff;
-            opacity: .2;
-        }
-        &:-ms-input-placeholder {
-            color: #fff;
-            opacity: .2;
-        }
-        &::-webkit-input-placeholder {
-            color: #fff;
-            opacity: .2;
-        }
+    &:-ms-input-placeholder {
+        color: #fff;
+        opacity: .2;
+    }
+    &::-webkit-input-placeholder {
+        color: #fff;
+        opacity: .2;
     }
 }
 </style>

@@ -26,7 +26,7 @@
 @import '../assets/style/mixin.scss';
 .header-main {
     height: $ht-header;
-    background: $clr-bg-top-menu;
+    background: $menu-item-fill;
     text-align: right;
     font-size: 14px;
     color: #fff;
