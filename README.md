@@ -1,22 +1,25 @@
-# vue-admin
+# VueAdmin —— 一个前端的灵活高效的后台管理系统开发集成库
 
-> vue-admin
-
-## Build Setup
-
+## 安装
 ``` bash
-# install dependencies
-npm install
+git clone https://github.com/imingyu/vue-admin.git
+cd vue-admin
+npm i
+```
 
-# serve with hot reload at localhost:8080
+## 运行
+``` bash
+# 开启本地服务器，访问：http://localhost:8090
 npm run dev
+```
 
-# build for production with minification
+## 编译
+``` bash
 npm run build
+```
 
-# build for production and view the bundle analyzer report
-npm run build --report
-
+## 测试
+``` bash
 # run unit tests
 npm run unit
 
@@ -27,4 +30,7 @@ npm run e2e
 npm test
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 目录结构
+
+
+## 规约

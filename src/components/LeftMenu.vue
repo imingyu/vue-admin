@@ -21,6 +21,22 @@
     </div>
 </template>
 
+<style lang="scss">
+.left-menu{
+    .el-menu-item,
+    .el-submenu__title{
+        height: 50px;
+        line-height: 50px;
+    }
+    .el-menu-item,
+    .el-submenu .el-menu-item{
+        height: 46px;
+        line-height: 46px;
+    }
+}
+</style>
+
+
 <script>
 export default {
     name: 'LeftMenu'

@@ -23,7 +23,7 @@
 
 .left-container {
     width: $wd-left-menu;
-    background: var($menu-item-fill);
+    background: $menu-item-fill;
     position: fixed;
     top: 0;
     left: 0;
